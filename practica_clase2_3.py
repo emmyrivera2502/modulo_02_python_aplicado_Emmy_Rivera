@@ -75,4 +75,104 @@ print("------")
 print("parte B")
 print(peliculas[::2])
 print(peliculas[1:4])
-print(peliculas[2:])
+print("-------")
+
+
+#metodo de listas
+print("metodo de listas")
+
+carrito = ["pantalon" , "camisa"]
+carrito.append("zapatos")
+print(carrito)
+carrito.insert(1, "cinturon")
+print(carrito)
+carrito.remove("pantalon")
+print(carrito)
+print("camisa" in carrito)
+carrito.sort()
+print(carrito)
+
+print("---------")
+
+#Listas aniadas
+print("listas aniadas")
+print("parte A")
+
+asientos = [
+    ["L", "L", "X"],
+    ["X", "L", "X"],
+    ["L", "X", "X"],
+
+    ]
+
+print(asientos[0])
+print(asientos[1][2])
+for fila in asientos:
+    print(fila)
+print("------")
+#parte b
+print("parte b")
+
+ventas_vendedores = [
+    ["Vendedor 1", 80, 167, 539],
+    ["vendedor 2", 78, 678, 342],
+
+]
+
+for vendedor in ventas_vendedores:
+    nombre = vendedor[0]
+    ventas = vendedor[1:]
+    total = sum(ventas)
+
+    print(f"{nombre}: total de ventas ${total}")
+print("-------")
+#tuplas
+print("tuplas")
+print("parte a")
+
+color = (120, 200, 50)
+print(color)
+print(color[0], color[1], color[2])
+print(type(color))
+print("---------")
+print("parte b")
+
+def calcular_brillo(c):
+    return sum(c) / 3
+
+color_a= (120, 200, 50)
+color_b= (10,10,10)
+
+brillo_a = calcular_brillo(color_a)
+brillo_b = calcular_brillo(color_b)
+print(f"Brillo A: {round(brillo_a, 2)}")
+print(f"Brillo B: {round(brillo_b, 2)}")
+
+if brillo_a >brillo_b:
+    print("El color A es mas brillante")
+else:
+    print("El color B es mas brillante")
+
+
+print("-------")
+
+print("torneo de trivia por equipos")
+
+equipos = [
+    ["Los Lakers", 35, 90, 22],
+    ["Boston Celtics", 47, 17, 68],
+    ["Knicks", 71, 86, 10]
+]
+
+
+def clasificar_equipo(total):
+    if total >= 60:
+        return("Campeon")
+    elif total >= 40:
+        return("Finalista")
+    else:
+        return("Principiante")
+
+total = sum(equipos[0])
+clasificacion_de_cada_equipo = clasificar_equipo(equipos)
+print(clasificacion_de_cada_equipo)
