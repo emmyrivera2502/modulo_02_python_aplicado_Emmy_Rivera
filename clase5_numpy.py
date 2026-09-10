@@ -94,5 +94,3 @@ ventas = np.array([
 
 print("Promedio por sucursal:", np.mean(ventas, axis=1))
 print("promedio por mes:", np.mean(ventas, axis=0))
-
-print(import(ventas))

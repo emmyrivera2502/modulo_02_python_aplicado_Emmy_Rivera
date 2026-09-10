@@ -1,66 +1,66 @@
-# #diccionarios
+#diccionarios
 
-# estudiante = {"nombre": "Jefte", "edad": 55, "curso": "IA"}
+estudiante = {"nombre": "Jefte", "edad": 55, "curso": "IA"}
 
-# print(estudiante["nombre"])
+print(estudiante["nombre"])
 
-# #modificar valores
-# estudiante["edad"] = 35
-# print(estudiante)
+#modificar valores
+estudiante["edad"] = 35
+print(estudiante)
 
-# #agregar informacion
-# estudiante["ciudad"] = "Santo Domingo"
-# print(estudiante)
+#agregar informacion
+estudiante["ciudad"] = "Santo Domingo"
+print(estudiante)
 
-# #eliminar info
-# del estudiante["curso"]
-# print(estudiante)
+#eliminar info
+del estudiante["curso"]
+print(estudiante)
 
-# #ejercicio
-# """
-# 1.  crear un diccionario llamado producto
-# 2. las llaves (clave y valor) "nombre", precio y stock
-# 3. agregar una nueva llave llamada categoria
-# 4. modificar el precio de la llave precio agregando 10 al valor
-# 5. eliminar la llave stock
-# """
+#ejercicio
+"""
+1.  crear un diccionario llamado producto
+2. las llaves (clave y valor) "nombre", precio y stock
+3. agregar una nueva llave llamada categoria
+4. modificar el precio de la llave precio agregando 10 al valor
+5. eliminar la llave stock
+"""
 
-# producto = {"nombre": "Termo Owala", "precio":1500, "stock": 55 }
-# print(producto)
-# print("------")
-# producto["categoria"] = "termo"
-# print(producto)
-# print("-------")
-# producto["precio"] += 10
-# print(producto)
-# print("--------")
-# del producto["stock"]
-# print(producto)
+producto = {"nombre": "Termo Owala", "precio":1500, "stock": 55 }
+print(producto)
+print("------")
+producto["categoria"] = "termo"
+print(producto)
+print("-------")
+producto["precio"] += 10
+print(producto)
+print("--------")
+del producto["stock"]
+print(producto)
 
-# #metodos para trabajar con diccionarios
-# print(estudiante.keys()) #devulve todas las llaves
-# print(estudiante.values()) #devuelve todos los valores
-# print(estudiante.items()) #devuelve cada par clave:valor en una tupla
+#metodos para trabajar con diccionarios
+print(estudiante.keys()) #devulve todas las llaves
+print(estudiante.values()) #devuelve todos los valores
+print(estudiante.items()) #devuelve cada par clave:valor en una tupla
 
-# #acceder a un valor en el diccionario
-# print(estudiante.get("stock")) #es mejor usar esta porque no para el programa. solo uestra none si no hay
+#acceder a un valor en el diccionario
+print(estudiante.get("stock")) #es mejor usar esta porque no para el programa. solo uestra none si no hay
 
-# """
-# EJERCICIO GUIADO
+"""
+EJERCICIO GUIADO
 
-# utilicen este diccionario: 
-# recorrer el diccionario con el metodo .items que me imprima para cada producto si es suficiente
-# suficiente = 40 o mas
-# pocas= menos de 40
+utilicen este diccionario: 
+recorrer el diccionario con el metodo .items que me imprima para cada producto si es suficiente
+suficiente = 40 o mas
+pocas= menos de 40
 
-# """
-# inventario = {"manzana": 50, "peras": 30, "uvas": 80}
+"""
+inventario = {"manzana": 50, "peras": 30, "uvas": 80}
 
-# for producto, cantidad in inventario.items():
-#     if cantidad >= 40:
-#         print(f"{producto} - suficiente {cantidad}")
-#     else:
-#         print(f"{producto} - pocas {cantidad}")
+for producto, cantidad in inventario.items():
+    if cantidad >= 40:
+        print(f"{producto} - suficiente {cantidad}")
+    else:
+        print(f"{producto} - pocas {cantidad}")
 
 #conjuntos (set)- tranforma a un conjunto, no permite duplicados, el orden puede cambiar
 frutas_emmy = {"manzana", "pera", "uva"}

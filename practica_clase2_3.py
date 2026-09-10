@@ -1,6 +1,5 @@
 # Practica bucles, funciones y estructuras de datos
 
-
 #Bucle for
 print("Bucle for")
 
@@ -76,7 +75,6 @@ print("parte B")
 print(peliculas[::2])
 print(peliculas[1:4])
 print("-------")
-
 
 #metodo de listas
 print("metodo de listas")

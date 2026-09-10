@@ -12,8 +12,8 @@ df = pd.read_csv("titanic.csv")
 # print(df["Name"].head(3))
 
 # #seleccionar y filtrar
-# subset = df[["Name", "Age", "Survived"]]
-# print(subset.head(3))
+subset = df[["Name", "Age", "Survived"]]
+print(subset.head(3))
 
 # #filtrar con una condicion
 # mayores_30 = df[df["Age"] > 30]
@@ -79,14 +79,14 @@ import numpy as np
 
 """
 ejercicio guiado
-1. filtrar el dataframe para quedarse solo con los pasajeros de la columna Pclass
-2. guardar en una variable nueva e imprimira cuantas filas tiene
+1. filtrar el dataframe para quedarse solor con los pasajeros de la columna Pclass
+2. guardar en una variable nueva e imprimia cuantas filas tiene
 3. despues utilizara el metodo .value_counts() para la columna Pclass del dataframe original
 
 objetivo : visualzar cuantos pasajeros hay en cada clase
 comparar con el 1
 """
 
-pasajeros = df[df["Pclass"] == 1]
-print(pasajeros.shape)
+pasajeros_primera_clase = df[df["Pclass"] == 1]
+print(pasajeros_primera_clase.shape)
 print(df["Pclass"].value_counts())
